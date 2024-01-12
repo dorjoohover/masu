@@ -60,7 +60,7 @@ export default function Home() {
         <HStack w={"full"} justifyContent={"space-between"}>
           <VStack h="25vw" alignItems={"start"} flex={2}>
             <Stack alignItems="strech" my={"auto"}>
-              <Title fs={50} text={["Бизнесээ", "нэг дороос", "удирд"]} />
+              <Title fs={56} text={["Бизнесээ", "нэг дороос", "удирд"]} />
             </Stack>
             <HStack w="full" mt={4} gap={4} alignItems={"start"}>
               <MainButton>Эхлэх</MainButton>

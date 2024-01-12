@@ -15,32 +15,32 @@
 }
 
 .nav {
-  animation: 0.5s ease-out upToDown;
+  animation: 1.5s ease-out 1s upToDown;
 }
 .downToUp {
-  animation: 0.5s ease-out downToUp;
+  animation: 1.5s ease-out 1s downToUp;
 }
 .upToDown {
-  animation: 0.5s ease-out upToDown;
+  animation: 1.5s ease-out upToDown;
 }
 .rightToLeft {
-  animation: 0.5s ease-out rToL;
+  animation: 1.5s ease-out rToL;
 }
 .leftToRight {
-  animation: 0.5s ease-out lToR;
+  animation: 1.5s ease-out lToR;
 }
 .flipLeft {
-  animation: 0.5s ease-out flipLeft forwards;
+  animation: 1.5s ease-out flipLeft forwards;
 }
 .flipRight {
-  animation: 0.5s ease-out flipRight forwards;
+  animation: 1.5s ease-out flipRight forwards;
 }
 .flipUp {
-  animation: 0.5s ease-out flipUp forwards;
+  animation: 1.5s ease-out flipUp forwards;
 }
 
 .fadeIn {
-  animation: 2s ease-out fadeIn;
+  animation: 3s ease-out fadeIn;
 
 }
 .flex-1 {
@@ -52,23 +52,23 @@
 
 .header-1 {
   opacity: 0;
-  animation: 0.5s ease-out popUp50 forwards;
+  animation: 1.5s ease-out popUp50 forwards;
 }
 .header-2 {
   opacity: 0;
-  animation: 0.5s ease-out popUp30 forwards;
+  animation: 1.5s ease-out popUp30 forwards;
 }
 .header-3 {
   opacity: 0;
-  animation: 0.5s ease-out 0.3s popUp050 forwards;
+  animation: 1.5s ease-out 1s popUp050 forwards;
 }
 .header-4 {
   opacity: 0;
-  animation: 0.5s ease-out 0.6s popUp5030 forwards;
+  animation: 1.5s ease-out 2s popUp5030 forwards;
 }
 .header-5 {
   opacity: 0;
-  animation: 0.5s ease-out 0.9s popUp040 forwards;
+  animation: 1.5s ease-out 3s popUp040 forwards;
   
 }
 

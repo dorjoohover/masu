@@ -1,7 +1,7 @@
 import { VStack, Heading } from "@chakra-ui/react";
 import Animation from "./Animation";
 
-const Title = ({ fs = 40, text, color }) => {
+const Title = ({ fs = 48, text, color }) => {
   return (
     <Animation classNameInView={'fadeIn'}>
       <VStack alignItems={"start"} gap={0} >
