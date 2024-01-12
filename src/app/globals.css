@@ -1,27 +1,243 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?  family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap");
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.container {
+  max-width: 1150px;
+  padding-left: 5em;
+  padding-right: 5em;
+  margin: auto;
+}
+
+.nav {
+  animation: 0.5s ease-out upToDown;
+}
+.downToUp {
+  animation: 0.5s ease-out downToUp;
+}
+.upToDown {
+  animation: 0.5s ease-out upToDown;
+}
+.rightToLeft {
+  animation: 0.5s ease-out rToL;
+}
+.leftToRight {
+  animation: 0.5s ease-out lToR;
+}
+.flipLeft {
+  animation: 0.5s ease-out flipLeft forwards;
+}
+.flipRight {
+  animation: 0.5s ease-out flipRight forwards;
+}
+.flipUp {
+  animation: 0.5s ease-out flipUp forwards;
+}
+
+.fadeIn {
+  animation: 2s ease-out fadeIn;
+
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+
+.header-1 {
+  opacity: 0;
+  animation: 0.5s ease-out popUp50 forwards;
+}
+.header-2 {
+  opacity: 0;
+  animation: 0.5s ease-out popUp30 forwards;
+}
+.header-3 {
+  opacity: 0;
+  animation: 0.5s ease-out 0.3s popUp050 forwards;
+}
+.header-4 {
+  opacity: 0;
+  animation: 0.5s ease-out 0.6s popUp5030 forwards;
+}
+.header-5 {
+  opacity: 0;
+  animation: 0.5s ease-out 0.9s popUp040 forwards;
+  
+}
+
+
+
+
+@keyframes popUp50 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateX(-60%);
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(-50%);
+  }
+}
+@keyframes popUp050 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-60%);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(-50%);
+  }
+}
+@keyframes popUp30 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateX(-30%);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1) translateX(-30%);
+  }
+}
+@keyframes popUp5030 {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translate(50%, 30%);
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(50%, 30%);
+  }
+}
+@keyframes popUp040 {
+  0% {
+opacity: 1;
+transform: scale(0.8) translateY(-40%);
+}
+
+100% {
+    opacity: 1;
+    transform: scale(1) translateY(-40%);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes upToDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-25px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes downToUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(25px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rToL {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(25px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes lToR {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-25px);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) ;
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: scale(1) ;
+  }
+}
+@keyframes flipLeft {
+  0% {
+    opacity: 0;
+    transform: scaleX(-1) ;
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: scaleX(1) ;
+  }
+}
+@keyframes flipRight {
+  0% {
+    opacity: 0;
+    transform: scaleX(1) ;
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: scaleX(-1) ;
+  }
+}
+@keyframes flipUp {
+  0% {
+    opacity: 0;
+    transform: scaleY(-1) ;
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: scaleY(1) ;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
