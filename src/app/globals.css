@@ -15,7 +15,8 @@
 }
 
 .nav {
-  animation: 1.5s ease-out 1s upToDown;
+  opacity: 1;
+  animation: 1.5s ease-out 1s upToDown forwards;
 }
 .downToUp {
   animation: 1.5s ease-out 1s downToUp;
